@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="560" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Folder" parentEntity="Item">
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Item" inverseName="parent" inverseEntity="Item"/>
+    </entity>
+    <entity name="Item" isAbstract="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Folder" inverseName="children" inverseEntity="Folder"/>
+    </entity>
+    <entity name="Page" parentEntity="Item"/>
+    <elements>
+        <element name="Item" positionX="43" positionY="-99" width="128" height="75"/>
+        <element name="Folder" positionX="-173" positionY="36" width="128" height="60"/>
+        <element name="Page" positionX="133" positionY="36" width="128" height="45"/>
+    </elements>
+</model>
