@@ -65,8 +65,8 @@
     NSManagedObject *first = [NSEntityDescription insertNewObjectForEntityForName:@"Folder" inManagedObjectContext:self.managedObjectContext];
     [first setValue:@"my first folder" forKey:@"name"];
     [children addObject:first];
-    NSManagedObject *page = [NSEntityDescription insertNewObjectForEntityForName:@"Page" inManagedObjectContext:self.managedObjectContext];
-    [page setValue:@"my second page" forKey:@"name"];
+    NSManagedObject *page = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:self.managedObjectContext];
+    [page setValue:@"my second item" forKey:@"name"];
     [children addObject:page];
 }
 
