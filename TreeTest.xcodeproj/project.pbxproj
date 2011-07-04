@@ -264,6 +264,7 @@
 		81E48FFB13C116A50019C09D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TreeTest/TreeTest-Prefix.pch";
 				INFOPLIST_FILE = "TreeTest/TreeTest-Info.plist";
@@ -275,6 +276,7 @@
 		81E48FFC13C116A50019C09D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TreeTest/TreeTest-Prefix.pch";
 				INFOPLIST_FILE = "TreeTest/TreeTest-Info.plist";
